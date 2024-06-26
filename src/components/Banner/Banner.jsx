@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import './banner.js'
 import { banner } from '../../assets/assets.js'
-
+import './Banner.css'
 
 const Banner = () => {
     // console.log(banner, 'banner')
