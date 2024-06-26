@@ -1,7 +1,7 @@
-
-.bestseller_container{
+.bestseller_container {
     text-align: center;
 }
+
 .product-container {
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
     margin: 20px 0;
 }
 
- .slideBtn {
+.slideBtn {
     margin: 25px auto;
     /* position: relative; */
 }
@@ -24,7 +24,8 @@
     outline: none;
     transition: all 0.8s ease;
     font-weight: 600;
-} 
+}
+
 /* .slideBtn .first:hover{
     
 } */
@@ -52,8 +53,6 @@
 }
 
 
-
-
 .product-card {
     background-color: #FBBDBB;
     border-radius: 10px;
@@ -62,17 +61,16 @@
     width: 264px;
     text-align: center;
     position: relative;
-    transition: transform .5s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 
 .product-card:hover {
-  
- transform: scale(0.8); /* Scale the box to 80% of its original size */
+
+    transform: scale(0.9);
+    /* Scale the box to 80% of its original size */
 
 }
-
-
 
 
 .product-card img {
@@ -104,9 +102,9 @@
 }
 
 .product-info button:hover {
-    background-color:white;
+    background-color: white;
     color: #888;
-   
+
 }
 
 .pagination {
@@ -116,8 +114,8 @@
     margin: 20px 0;
 }
 
-.pagination button{
-    
+.pagination button {
+
     border: none;
     background-color: #ffff;
 }
@@ -143,7 +141,7 @@
     /* background-color: #e9acb6; */
     color: #FF5BB1;
     background: #ffff;
-    border:2px solid #FF5BB1;
+    border: 2px solid pink;
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -152,10 +150,12 @@
     display: block;
     margin: auto;
 }
-.see-all button:hover{
+
+.see-all button:hover {
     color: #fff;
-    background: #FF5BB1 ;
+    background: pink;
 }
+
 /* scroll */
 
 .bar {
@@ -189,14 +189,14 @@
 .bar img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; 
+    object-fit: contain;
     border: 2px solid #E9ACB6;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: auto; 
-    padding: 0; 
+    height: auto;
+    padding: 0;
     box-sizing: border-box;
 
     scroll-snap-align: start;
@@ -205,12 +205,12 @@
 .bar::-webkit-scrollbar {
     width: 13px;
     height: 15px;
-    
+
 }
 
-.bar::-webkit-scrollbar-thumb{
+.bar::-webkit-scrollbar-thumb {
     background-color: #E9ACB6;
-    border-radius:30px;
+    border-radius: 30px;
 }
 
 /* scroll end */
@@ -226,11 +226,11 @@
 @media (max-width: 1167px) {
     .product-container {
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
     }
 
     .product-card {
-       
+
         max-width: 200px;
     }
 }
@@ -245,7 +245,3 @@
         display: none;
     }
 }
-
-
-
-

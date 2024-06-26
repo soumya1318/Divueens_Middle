@@ -14,9 +14,7 @@ const ShopByCategory = () => {
   return (
     <>
      <section className="Shop_By_Category">
-        <div  style={{
-                        backgroundImage: `url(${background})`
-                    }} className="main">
+        <div  style={{backgroundImage: `url(${background})`}} className="main">
             <div className="heading">
                 <hr className="hr-left"/>
                 <h2>Shop By Categories</h2>
