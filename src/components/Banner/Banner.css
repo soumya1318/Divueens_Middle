@@ -1,15 +1,15 @@
 .banner-slider {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    /* max-width: 1200px; */
-    margin: auto;
     overflow: hidden;
 }
 
 .banner-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    overflow: hidden;
 }
 
 .banner-slide {
@@ -18,16 +18,14 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    overflow: hidden;
 }
+
 .banner-image img {
     width: 100%; 
     height: auto; 
     border-radius: .2rem; 
     overflow: hidden;
 }
-
-
 
 .banner-navigation {
     position: absolute;
@@ -49,6 +47,28 @@
 
 .banner-navigation button:hover {
     background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-dots>.banner-dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #e9acb6;
+    transition: 0.2s;
+}
+
+.banner-dots>.banner-dot.active {
+    width: 30px;
+    height: 7.5px;
+    border-radius: 10px;
+    background-color: #ff5bb1;
 }
 
 

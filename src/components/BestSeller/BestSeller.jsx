@@ -15,21 +15,17 @@ const BestSeller = () => {
 
     const handleMouseEnter = () => {
         setIsHovered(true);
-       
     };
 
     const handleMouseLeave = () => {
         setIsHovered(false);
-
     };
     
     // hover buttons
-
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
             // num=prevIndex
             prevIndex + imagesToShow >= imageUrls.length ? 0 : prevIndex + imagesToShow
-
         );
         setActiveIndex((prevIndex) => (prevIndex === 1 ? 0 : prevIndex + 1));
 
@@ -39,7 +35,6 @@ const BestSeller = () => {
         setCurrentIndex((prevIndex) =>
             // console.log(prevIndex,'prevslide')
             prevIndex === 0 ? imageUrls.length - imagesToShow : prevIndex - imagesToShow
-
         );
         setActiveIndex((prevIndex) => (prevIndex === 0 ? 1 : prevIndex - 1));
     };
@@ -54,7 +49,6 @@ const BestSeller = () => {
 
     return (
         <>
-
             <div className="heading">
                 <hr className="hr-left" />
                 <h2>Best Seller</h2>
@@ -69,7 +63,7 @@ const BestSeller = () => {
                         backgroundColor: isHovered ? '#ffff' : '#E9ACB6',
                         color: isHovered ? '#000' : '#fff' ,
                         transition: 'all 0.3s ease'
-                    }} class="first">New Arrivals</button>
+                    }} className="first">New Arrivals</button>
                 <button onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave} style={{
                         backgroundColor: isHovered ? '#E9ACB6':'#ffff' ,
@@ -80,7 +74,7 @@ const BestSeller = () => {
             <div className="product-container">
 
                 {currentImages.map((image, index) => (
-                    <div className="product-card ">
+                    <div key={index} className="product-card ">
                         <img src={image} alt={`product ${index + currentIndex}`} />
                         <div className="product-info">
                             <h3>MAC' Face Mask</h3>
@@ -92,18 +86,16 @@ const BestSeller = () => {
 
             </div>
 
-            <div class="pagination">
+            <div className="pagination">
 
                 {Array.from({ length: totalSlides }).map((_, index) => (
                     <button key={index} onClick={() => goToSlide(index)}>
                         <span className={`dot ${activeIndex === index ? 'active' : ''}`}></span>
                     </button>
                 ))}
-
-
-
+                
             </div>
-            <div class="see-all">
+            <div className="see-all">
                 <button>See All</button>
             </div>
 

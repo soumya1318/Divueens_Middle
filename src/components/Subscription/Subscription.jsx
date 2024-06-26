@@ -62,16 +62,6 @@ const Subscription = () => {
 
     };
 
-    const renderDots = () => {
-        return Array.from({ length: totalSlides }).map((_, index) => (
-            <span
-                key={index}
-                className={`dot ${index === currentSlideIndex ? 'active' : ''}`}
-                onClick={() => currentSlide(index)}
-            ></span>
-        ));
-    };
-
     return (
         <>
             <section className="Subscription">
@@ -95,34 +85,42 @@ const Subscription = () => {
                         {/* Slide 1 */}
                         <div className="slide">
                             <div className="item">
-                                <img src={sub_1} alt="Beauty Combo 1" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_1} alt="Beauty Combo 1" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_2} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_2} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_3} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_3} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_4} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_4} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
                             {/* Repeat similar structure for each item */}
@@ -132,34 +130,42 @@ const Subscription = () => {
                         {/* Slide 2 */}
                         <div className="slide">
                             <div className="item">
-                                <img src={sub_1} alt="Beauty Combo 1" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_1} alt="Beauty Combo 1" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_2} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_2} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_3} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_3} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_4} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_4} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -168,34 +174,42 @@ const Subscription = () => {
                         {/* Slide 3 */}
                         <div className="slide">
                             <div className="item">
-                                <img src={sub_1} alt="Beauty Combo 1" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_1} alt="Beauty Combo 1" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_2} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_2} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_3} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_3} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_4} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_4} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -203,34 +217,42 @@ const Subscription = () => {
                         {/* Slide 4 */}
                         <div className="slide">
                             <div className="item">
-                                <img src={sub_1} alt="Beauty Combo 1" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_1} alt="Beauty Combo 1" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_2} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_2} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_3} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_3} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className="item">
-                                <img src={sub_4} alt="Beauty Combo 2" />
-                                <div style={{ display: 'flex' }}>
-                                    <p style={{ marginLeft: '20px' }}>Beauty Combo<br />Rs. 12000/-</p>
-                                    <button onClick={() => buyNow('Beauty Combos', 6000)} style={{ marginLeft: '50px', marginBottom: '10px' }}>Buy Now</button>
+                                <div  className='item_prod'>
+                                    <img src={sub_4} alt="Beauty Combo 2" />
+                                    <div style={{ display: 'flex' }}>
+                                        <p style={{ marginLeft: '20px' }}>Beauty Combo<br /><span>Rs. 12000/-</span></p>
+                                        <button onClick={() => buyNow('Beauty Combos', 6000)}>Buy Now</button>
+                                    </div>
                                 </div>
                             </div>
 
@@ -239,19 +261,15 @@ const Subscription = () => {
                         {/* end slide */}
 
                     </div>
-                    <div className="navigation">
-                        <button className="prev" onClick={() => changeSlide(-1)}>❮</button>
-                        <button className="next" onClick={() => changeSlide(1)}>❯</button>
-                    </div>
                     <div className="dots">
-
-                        {
-                            renderDots()
-                        }
-                        {/* <span className="dot" onClick={() => currentSlide(0)}></span>
-                        <span className="dot" onClick={() => currentSlide(1)}></span>
-                        <span className="dot" onClick={() => currentSlide(2)}></span>
-                        <span className="dot" onClick={() => currentSlide(3)}></span> */}
+                    {Array.from({ length: totalSlides }).map((_, index) => {
+                    return (
+                        <span
+                        key = {index}
+                        className = {`dot ${index === currentSlideIndex ? 'active' : ''}`}
+                        onClick = {() => currentSlide(index)}
+                        ></span>
+                    )})}
                     </div>
                 </div>
 
