@@ -17,14 +17,8 @@ const Banner = () => {
     const slides = document.querySelector(".banner-slides");
     const offset = -currentBannerSlideIndex * 100;
     slides.style.transform = `translateX(${offset}%)`;
-    // updateDots();
   };
 
-  // const updateDots = () => {
-  //     const dots = document.querySelectorAll('.dot');
-  //     dots.forEach(dot => dot.classList.remove('active'));
-  //     dots[currentSlideIndex].classList.add('active');
-  // };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,14 +47,6 @@ const Banner = () => {
             {/* end slide */}
           </div>
 
-          {/* <div className="banner-navigation">
-            <button className="prev" onClick={() => changeBannerSlide(-1)}>
-              ❮
-            </button>
-            <button className="next" onClick={() => changeBannerSlide(1)}>
-              ❯
-            </button>
-          </div>     */}
 
           <div className="banner-dots">
             {banner.map((_, index) => {
